@@ -1,0 +1,45 @@
+# Travail temporaire et sorties locales
+/tmp/
+~$*
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+
+# Identifiants et configurations propres au laboratoire
+.env
+.env.*
+!.env.example
+/secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.kubeconfig
+kubeconfig
+.kube/
+*.retry
+/ansible/inventory.local.yml
+/ansible/inventory.local.yaml
+/ansible/host_vars/*.local.yml
+/ansible/group_vars/*.local.yml
+
+# Images de VM et ISO
+*.iso
+*.img
+*.qcow2
+*.raw
+*.vmdk
+*.vdi
+
+# État Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+!*.example.tfvars
